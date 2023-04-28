@@ -1,0 +1,48 @@
+<script type="text/javascript">
+    //no return with parameter
+    // function demo1(a,b,c){
+    //     if(a > b && a  >c){
+    //         document.write("<h1>A is Big</h1>");
+    //     }
+    //     else if(b > a && b > c){
+    //         document.write("<h1>B is Big</h1>");
+    //     }
+    //     else{
+    //         document.write("<h1>C is Big</h1>");
+    //     }
+    // }
+    // var a = parseInt(prompt("Enter Value Of A :-"));
+    // var b = parseInt(prompt("Enter Value Of B :-"));
+    // var c = parseInt(prompt("Enter Value Of C :-"));
+
+    // demo1(a,b,c);
+
+    //return with no parameter
+
+    function demo2(){
+        if(a > b && a > c){
+            return 1;
+        }
+        else if(b > a && b  > c){
+            return 2; 
+        }
+        else{           
+            return 3;
+        }
+    }
+     var a = parseInt(prompt("Enter Value Of A :-"));
+     var b = parseInt(prompt("Enter Value Of B :-"));
+     var c = parseInt(prompt("Enter Value Of C :-"));
+     
+    var ans = demo2();
+    document.write("<h1>Ans = "+ans+"</h1>");
+    if(ans == 1){
+        document.write("<h1>A is Big</h1>");
+    }
+    else if(ans == 2){
+        document.write("<h1>B is Big</h1>");
+    }
+    else{
+        document.write("<h1>C is Big</h1>");
+    }
+</script>

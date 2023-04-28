@@ -1,0 +1,59 @@
+<table id="root" border="1">
+</table>
+
+<style>
+    .black{
+        background-image: url(wood.jpg);
+        width: 100px;
+        height: 100px;
+    }
+    .white{
+        background-image: url(white.jpg);
+        width: 100px;
+        height: 100px;
+    }
+</style>
+<script>
+    
+    let root = document.getElementById('root');
+    
+
+    for(let i = 1;i <= 8;i++){
+        let tr = document.createElement('tr');
+        
+       if(i%2==1){
+        for(let j = 1;j <= 8; j++){
+            let td = document.createElement('td');
+            tr.appendChild(td);
+            
+            if(j % 2 == 1){
+                td.setAttribute('class','white');
+            }
+            else{
+                td.setAttribute('class','black');
+            }
+            
+        }
+
+       }
+       else{
+        for(let j = 1;j <= 8; j++){
+            let td = document.createElement('td');
+            tr.appendChild(td);
+            
+            if(j % 2 == 1){
+                td.setAttribute('class','black');
+            }
+            else{
+                td.setAttribute('class','white');
+            }
+            
+        }
+       }
+        
+        
+       root.appendChild(tr); 
+
+    }
+    
+</script>

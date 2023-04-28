@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            calculator
+        </title>
+    </head>
+    
+    <body bgcolor="black" >
+        
+        <center>
+            <table border="5" cellspacing="2px" bordercolor="white  " bgcolor="black">
+                <tr>
+                    <td><input type="text" id="ans"></td>
+                </tr>
+                <tr>
+                    <td><button onclick="ans.value+='1'">1</button>
+                    <button onclick="ans.value+='2'">2</button>
+                    <button onclick="ans.value+='3'">3</button>
+                    <button onclick="ans.value+='+'">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="ans.value+='4'">4</button>
+                    <button onclick="ans.value+='5'">5</button>
+                    <button onclick="ans.value+='6'">6</button>
+                    <button onclick="ans.value+='-'">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="ans.value+='7'">7</button>
+                    <button onclick="ans.value+='8'">8</button>
+                    <button onclick="ans.value+='9'">9</button>
+                    <button onclick="ans.value+='*'">*</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="ans.value+='0'">0</button>
+                    <button onclick="ans.value+='.'">.</button>
+                    <button onclick="ans.value+='/'">/</button>
+                    <button onclick="ans.value = eval(ans.value)">=</button></td>
+                </tr>
+            </table>
+        </center>
+
+    </body>
+</html>

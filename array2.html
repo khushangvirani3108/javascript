@@ -1,0 +1,44 @@
+<center>
+    <table border="2" cellspacing="2px" color="black">
+        <tr style="font-weight: 800;">
+            <td>GR.ID </td>
+            <td>NAME </td>
+            <td>Email </td>
+            <td>Phone </td>
+        </tr>
+        <tbody id = "record">
+
+        </tbody>
+    </table>
+</center>
+
+<script>
+    var gr = parseInt(prompt("Enter GR Id of Anyone :-"));
+    
+    var data1 = [1,"Kachra seth","kachraseth@gmail.com",9923554463];
+    var data2 = [2," seth","kachraseth@gmail.com",9923554463];
+    var data3 = [3,"Kachra seth","kachr@gmail.com",9923554463];
+    var data4 = [4,"Kachra seth","kth@gmail.com",9923554463];
+    var data5 = [5,"Kachra seth","kail.com",9923554463];
+    
+    
+    var alldata = [data1,data2,data3,data4,data5];
+    var tbl = "";
+
+    for(var i = 0; i < alldata.length;i++){
+        if(gr == alldata[i][0]){
+            
+            tbl += `
+            <tr>
+                <td>${alldata[i][0]}</td>
+                <td>${alldata[i][1]}</td>
+                <td>${alldata[i][2]}</td>
+                <td>${alldata[i][3]}</td>
+                </tr>
+                
+                `
+                
+                document.getElementById("record").innerHTML = tbl;
+            }
+    }
+</script>

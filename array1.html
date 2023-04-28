@@ -1,0 +1,38 @@
+<center>
+    <table border="2" cellspacing="2px" color="black">
+        <tr style="font-weight: 800;">
+            <td>GR.ID </td>
+            <td>NAME </td>
+            <td>Email </td>
+            <td>Phone </td>
+        </tr>
+        <tbody id = "record">
+
+        </tbody>
+    </table>
+</center>
+
+<script>
+    var data1 = [150,"Kachra seth","kachraseth@gmail.com",9923554463];
+    var data2 = [25,"Akshay Kumar","akshaykumar@gmail.com",4556120781];
+    var data3 = [2001,"baburao ganpat rao apte","baburaoapte@gmail.com",5454142514];
+    var data4 = [150,"babu bisleri","babu@gmail.com",9922356899];
+    var data5 = [150,"jhonny lever","lever@gmail.com",1115554448];
+
+    var alldata = [data1,data2,data3,data4,data5];
+    var tbl = "";
+
+    for(var i = 0; i < alldata.length;i++){
+        tbl += `
+                    <tr>
+                        <td>${alldata[i][0]}</td>
+                        <td>${alldata[i][1]}</td>
+                        <td>${alldata[i][2]}</td>
+                        <td>${alldata[i][3]}</td>
+                    </tr>
+
+                `
+
+        document.getElementById("record").innerHTML = tbl;
+    }
+</script>
